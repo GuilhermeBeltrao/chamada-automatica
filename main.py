@@ -2,27 +2,33 @@ from methods import *
 from datetime import *
 
     
-#   Monday schedule -- TODO
+#   Monday schedule 
 while current_weekday() == 0:
     subjects = ["Português", "Filosofia",  "Química", "Fisica", "Arte", "Matemática", "Educação Física"]
-    classes_time = ["07:20:00", "08:05:00", "09:00:00", "09:45:00", "10:40:00", "11:25:00", "12:10:00"]
-    start_signing(classes_time, subjects)
+    class_schedules = ["07:20:00", "08:05:00", "09:00:00", "09:45:00", "10:40:00", "11:25:00", "12:10:00"]
+    start_signing(class_schedules, subjects)
 
-#   Tuesday schedule -- TODO
+#   Tuesday schedule 
 while current_weekday() == 1:
     subjects = ["História", "Inglês",  "Química", "Matemática", "Biologia", "Redação", "Arte"]
-    classes_time = ["07:20:00", "08:05:00", "08:50:00", "09:35:00", "10:40:00", "11:25:00", "12:10:00"]
+    class_schedules = ["07:20:00", "08:05:00", "08:50:00", "09:35:00", "10:40:00", "11:25:00", "12:10:00"]
+    start_signing(class_schedules, subjects)
 
-#   Wednesday schedule -- DONE
+#   Wednesday schedule 
 while current_weekday() == 2:
     subjects = ["Português", "Inglês",  "Geografia", "Biologia", "Fisica", "História"]
-    classes_time = ["07:20:00", "08:05:00", "08:50:00", "09:35:00", "10:40:00", "11:25:00"]
+    class_schedules = ["07:20:00", "08:05:00", "08:50:00", "09:35:00", "10:40:00", "11:25:00"]
+    start_signing(class_schedules, subjects)
 
-#   Thursday schedule -- TODO
+#   Thursday schedule 
 while current_weekday() == 3:
-    pass
+    subjects = ["Sociologia", "Biologia",  "Português", "Química", "Matemática", "Geografia"]
+    class_schedules = ["07:20:00", "08:05:00", "08:50:00", "09:35:00", "10:40:00", "11:25:00"]
+    start_signing(class_schedules, subjects)
     
-#   Friday schedule -- TODO
+#   Friday schedule
 while current_weekday() == 4:
-    pass
+    subjects = ["Matemática", "Sociologia",  "Geografia", "Fisica", "História", "Redação", "Português"]
+    class_schedules = ["07:10:00", "07:55:00", "08:40:00", "09:45:00", "10:30:00", "11:25:00", "12:00:00"]
+    start_signing(class_schedules, subjects)
     

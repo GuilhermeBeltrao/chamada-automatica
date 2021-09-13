@@ -33,10 +33,10 @@ def current_time():
     return current_time
 
 
-def start_signing(classes_time, subjects):
+def start_signing(class_schedules, subjects):
     classes = []
     for x in range(len(subjects)):
-        classes.append({"time": classes_time[x], "subject": subjects[x]})
+        classes.append({"time": class_schedules[x], "subject": subjects[x]})
         print(classes[x])
         
     i = 0
