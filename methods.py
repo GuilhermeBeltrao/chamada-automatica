@@ -10,15 +10,15 @@ def sign_attendance_sheet(materia):
     "entry.2136258989":     "",  # Nome   
     "entry.444597552":      0000,       # Número 
     "entry.337721011":      materia,
-    "entry.1762880222":     000,        # turma
-    "entry.121857887":      "",        # intinerario (A ou B)
+    "entry.1762880222":     000,        # Turma
+    "entry.121857887":      "",        # Itinerario (A ou B)
     "emailAddress":         "" # email
     }
     
     if requests.post(url=URL, data=data).status_code == 200:
         return "Sua presenca na aula de {} foi marcada com sucesso ".format(materia)
     else:
-        return "algo deu errado durante a requisicao"
+        return "algo deu errado durante a requisição"
 
 
 def current_weekday():
@@ -40,7 +40,7 @@ def start_signing(class_schedules, subjects):
         print(classes[x])
         
     i = 0
-    while i <= len(subjects) - 1:
+    while i < len(subjects):
         while current_time() == classes[i]["time"]:
             response = sign_attendance_sheet(classes[i]["subject"])
             i += 1 
